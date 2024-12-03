@@ -6,3 +6,13 @@ I designed this project solely to complete the coding challenge sent to me. It p
 - **Database**: MongoDB
 - **API Framework**: Gin
 - **Build Tool**: Makefile
+
+## Endpoints:
+
+| HTTP Method | Endpoint                     | Description                            |
+|-------------|------------------------------|----------------------------------------|
+| GET         | `/vehicle`                   | Fetch all vehicles.                   |
+| GET         | `/vehicle/:vin`              | Fetch a specific vehicle by VIN.      |
+| POST        | `/vehicle`                   | Add a new vehicle.                    |
+| PUT         | `/vehicle/:vin`              | Update a specific vehicle by VIN.     |
+| DELETE      | `/vehicle/:vin`              | Delete a specific vehicle by VIN.     |
