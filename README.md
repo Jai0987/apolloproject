@@ -102,4 +102,9 @@ curl -X DELETE http://localhost:8080/vehicle/3C6UR5FL2JG301234
 
 ---
 
-##
+## References and Support Material:
+1. Go Official Documentation
+2. gonic-gin documentation
+3. MongoDB Documentation
+4. Youtube
+5. GenAI (Solely to support and fix Testing functionality)
