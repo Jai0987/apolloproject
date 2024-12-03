@@ -19,7 +19,7 @@ I designed this project solely to complete the coding challenge sent to me. It p
 
 # Prereqs:
 1. **Go**: Version 1.19 or higher.
-2. **MongoDB**: A local or remote MongoDB instance (Make sure mongoDB is up and running; (MongoDB Installation Guide)(https://www.mongodb.com/docs/manual/administration/install-community/#std-label-install-mdb-community-edition))
+2. **MongoDB**: A local or remote MongoDB instance (Make sure mongoDB is up and running; [MongoDB Installation Guide](https://www.mongodb.com/docs/manual/administration/install-community/#std-label-install-mdb-community-edition))
 
 # Run the project
 
