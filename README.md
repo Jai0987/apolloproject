@@ -21,6 +21,8 @@ I designed this project solely to complete the coding challenge sent to me. It p
 1. **Go**: Version 1.19 or higher.
 2. **MongoDB**: A local or remote MongoDB instance (Make sure mongoDB is up and running; [MongoDB Installation Guide](https://www.mongodb.com/docs/manual/administration/install-community/#std-label-install-mdb-community-edition))
 
+---
+
 # Run the project
 
 1. Clone the project to your local machine:
@@ -34,3 +36,70 @@ I designed this project solely to complete the coding challenge sent to me. It p
   chmod +x run.sh
   chmod +x setup.sh
   ```
+
+3. Now, run the script
+
+```bash
+./run.sh
+```
+
+It will automatically setup the environment for you if not installed already (setting up Go and MongoDB), will build the Go APIs and create the DB with the Vehicle Collection and then add some sample data too.
+
+---
+
+# Testing
+
+For testing, Postman, Insomnia or any other API testing tool can be easily used.
+For testing on Terminal:
+
+1. Get All Vehicles:
+```
+bash
+curl -X GET http://localhost:8080/vehicle
+```
+
+2. Get a Vehicle with a specific VIN
+```bash
+curl -X GET http://localhost:8080/vehicle/<VIN>
+Eg: Sample VIN: 1HGCM82633A123456
+```
+
+3. Add a Vehicle
+```bash
+curl -X POST http://localhost:8080/vehicle \
+-H "Content-Type: application/json" \
+-d '{
+    "vin": "1HGCM82633A123456",
+    "manufacturer_name": "Honda",
+    "description": "Compact Sedan",
+    "horse_power": 150,
+    "model_name": "Civic",
+    "model_year": 2023,
+    "purchase_price": 22000,
+    "fuel_type": "Hybrid"
+}'
+```
+
+4. Update a pre-existing vehicle record
+```bash
+curl -X PUT http://localhost:8080/vehicle/1HGBH41JXMN109186 \
+-H "Content-Type: application/json" \
+-d '{
+    "manufacturer": "Toyota",
+    "description": "Updated compact car",
+    "horsePower": 130,
+    "modelName": "Corolla",
+    "model_year": 2020,
+    "purchase_price": 20000,
+    "fuel_type": "Petrol"
+}'
+```
+
+5. Delete a Vehicle Record
+```bash
+curl -X DELETE http://localhost:8080/vehicle/3C6UR5FL2JG301234
+```
+
+---
+
+##
