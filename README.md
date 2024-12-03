@@ -19,4 +19,18 @@ I designed this project solely to complete the coding challenge sent to me. It p
 
 # Prereqs:
 1. **Go**: Version 1.19 or higher.
-2. **MongoDB**: A local or remote MongoDB instance.
+2. **MongoDB**: A local or remote MongoDB instance (Make sure mongoDB is up and running; (MongoDB Installation Guide)[https://www.mongodb.com/docs/manual/administration/install-community/#std-label-install-mdb-community-edition])
+
+# Run the project
+
+1. Clone the project to your local machine:
+  ```bash
+  git clone https://github.com/Jai0987/apolloproject.git
+  cd apolloproject
+  ```
+
+2. Ensure proper rights to the shell scripts
+   ```bash
+   chmod +x run.sh
+   chmod +x setup.sh
+   ```
