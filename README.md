@@ -30,7 +30,7 @@ I designed this project solely to complete the coding challenge sent to me. It p
   ```
 
 2. Ensure proper rights to the shell scripts
-   ```bash
-   chmod +x run.sh
-   chmod +x setup.sh
-   ```
+  ```bash
+  chmod +x run.sh
+  chmod +x setup.sh
+  ```
