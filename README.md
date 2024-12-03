@@ -16,3 +16,7 @@ I designed this project solely to complete the coding challenge sent to me. It p
 | POST        | `/vehicle`                   | Add a new vehicle.                    |
 | PUT         | `/vehicle/:vin`              | Update a specific vehicle by VIN.     |
 | DELETE      | `/vehicle/:vin`              | Delete a specific vehicle by VIN.     |
+
+# Prereqs:
+1. **Go**: Version 1.19 or higher.
+2. **MongoDB**: A local or remote MongoDB instance.
